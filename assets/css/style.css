@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /*1rem==10px*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;1,500&display=swap');
+/*font-family: 'Montserrat', sans-serif; font-family: 'Roboto', sans-serif;*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/assets/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 15rem;
+
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-style: italic;
+}
+
+/*-----HEADER-NAV-----*/
+
+.header {
+    background-color: rgb(17, 45, 78);
+    height: 10rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+.navHeader {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.imgLogo {
+    height: 9rem;
+    margin-left: 4rem;
+}
+
+.navMenu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4rem;
+
+}
+
+
+.navItem {
+    list-style: none;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    line-height: 8rem;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.navLinkList {
+    color: white;
+    text-decoration: none;
+    padding: .8rem 1.2rem;
+    border-radius: 6rem;
+    transition: 350ms;
+}
+
+.navLinkList:hover {
+    border-bottom: solid .5rem greenyellow;
+}
+
+.navToggleMenu {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    padding: 0 2rem;
+    line-height: 6rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        padding-top: 7rem;
+        margin-bottom: 30rem;
+    }
+
+    .navMenu {
+        background-color: rgb(17, 45, 78);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 2rem;
+        position: fixed;
+        left: 0;
+        top: 10rem;
+        width: 100%;
+        padding: 2rem 0;
+        height: auto;
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.5s;
+    }
+
+    .navToggleMenu {
+        display: block;
+    }
+
+    .navMenu_visible {
+        left: 0;
+    }
+
+    .navToggleMenu:focus:not(:focus-visible) {
+        outline: none;
+    }
+
+}
+
+.containerFooter {
+    position: fixed;
+    background-color: rgb(17, 45, 78);
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+    bottom: 0;
+}
+
+/*-----INDEX-NOSOTROS-----*/
+
+.containerSection {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
+    grid-template-columns: 50rem 45rem;
+    grid-template-rows: repeat (2 50rem);
+    grid-template-areas: "containerText container1"
+        "containerText container2";
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    border-right: solid 0.5rem greenyellow;
+    border-bottom: solid 0.5rem greenyellow;
+    border-radius: 1rem;
+    box-shadow: .5rem .75rem 2rem greenyellow;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(17, 45, 78);
+    font-size: 1.8rem;
+    color: white;
+    grid-area: containerText;
+    padding: 2rem;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    grid-area: container1;
+
+}
+
+.container2 {
+    grid-area: container2;
+}
+
+@media screen and (max-width:768px) {
+    .containerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 5rem;
+    }
+}
+
+.imgSlides {
+    display: none;
+    height: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*-----PRODUCTOS-----*/
+
+.sectionProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+}
+
+.containerProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50rem;
+    background-color: rgb(17, 45, 78);
+    font-size: 1.8rem;
+    color: white;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+
+.containerKing {
+    list-style: none;
+    width: 15rem;
+    height: 25rem;
+    transition: 350ms;
+}
+
+.imgKing {
+    width: 100%;
+    height: 100%;
+}
+
+.containerKingProduct {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    transition: 2s;
+}
+
+
+.containerKing:hover {
+    border-right: solid 0.5rem rgb(43, 247, 247);
+    border-bottom: solid 0.5rem rgb(43, 247, 247);
+    border-radius: 1rem;
+    box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
+    transform: scale(1.1);
+}
+
+/*-----SERVICIOS-----*/
+
+.continerServicios {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    /*align-items: center;*/
+
+}
+
+/*.mainSerrvice {
+    height: 220vh;
+    gap: 2rem;
+}*/
+
+.containerTextService {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*justify-content: center;*/
+    margin-top: 11rem;
+    margin-bottom: 25rem;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(17, 45, 78);
+    font-size: 1.8rem;
+    color: white;
+    gap: 2rem;
+    padding:1rem;
+}
+
+/*------Contacto-----*/
+.mainForm {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionForm {
+    margin-top: 11rem;
+    margin-bottom: 5rem;
+    background-color: rgb(17, 45, 78);
+    font-size: 1.8rem;
+    color: white;
+    width: 80rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10rem 50rem;
+    grid-template-areas: "title info"
+        "form info";
+}
+
+.titleForm {
+    height: 5rem;
+    padding: 2rem;
+
+    grid-area: title;
+}
+
+.containerForm {
+    grid-area: form;
+
+}
+
+.containerItem label,
+input {
+    width: 100%;
+}
+
+.formContact {
+    /* grid-area: form;*/
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+    align-content: center;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: "fullname email"
+        "phone subject"
+        "message message"
+        "message message"
+        "button button";
+}
+
+.itemFullName {
+    grid-area: fullname;
+}
+
+.itemEmail {
+    grid-area: email;
+}
+
+.itemPhone {
+    grid-area: phone;
+}
+
+.itemSubject {
+    grid-area: subject;
+}
+
+.itemMessage {
+    grid-area: message;
+}
+
+
+
+.formItem input,
+.formItem textarea {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    outline: none;
+    color: white;
+    border: none;
+    /*border-bottom: solid 0.5rem greenyellow;*/
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem greenyellow;
+}
+
+.bttnEnviar {
+    background-color: rgb(30, 66, 106);
+    grid-area: button;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    border: 0;
+    border-bottom: 1rem;
+    border-radius: 1rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bttnEnviar:hover, .bttnEnviar:focus {
+    background-color: greenyellow;
+    color: rgba(17, 45, 78);
+    border-right: solid 0.5rem rgb(43, 247, 247);
+    border-bottom: solid 0.5rem rgb(43, 247, 247);
+    border-radius: 1rem;
+    letter-spacing: .2rem;
+    box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
+    transform: scale(1.04);
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(30, 66, 106);
+    grid-area: info;
+}
+
+.containerInfo ul {
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.containerInfo ul li {
+    padding: 0.5rem;
+}
+
+.moreInfo {
+    gap: 2rem
+}
+
+@media only screen and (max-width:768px) {
+    .sectionForm {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

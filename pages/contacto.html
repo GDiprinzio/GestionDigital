@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/0c8b810b9d.js" crossorigin="anonymous"></script>
+    <title>Gestión Digital</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navHeader">
+            <a href="./../index.html" class="navLink"><img src="./../assets/img/logo/logo_small_icon_only_inverted.png"
+                    alt="LOGO" class="imgLogo"></a>
+            <button class="navToggleMenu" aria-label="Abrir menú.">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="navMenu">
+                <li class="navItem"><a href="./../index.html" class="navLinkList">Inicio</a></li>
+                <li class="navItem"><a href="./nosotros.html" class="navLinkList">Nosotros</a></li>
+                <li class="navItem"><a href="./productos.html" class="navLinkList">Productos</a></li>
+                <li class="navItem"><a href="./servicios.html" class="navLinkList">Servicios</a></li>
+                <li class="navItem"><a href="./contacto.html" class="navLinkList">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainForm">
+        <section class="sectionForm container">
+            <div class="titleForm">
+                <h1 class="title">Contactenos.</h1>
+                <p class="text">Dejenos aquí sus datos y el motivo por el cual nos contacta.</p>
+            </div>
+            <div class="containerForm">
+                <form action="#" class="formContact">
+                    <div class="formItem ItemFullName">
+                        <label for="inputFullName" class="fullName">Nombre y Apellido:</label>
+                        <input type="text" class="inputFullName">
+                    </div>
+                    <div class="formItem ItemEmail">
+                        <label for="inputEmail" class="email">E-mail:</label>
+                        <input type="email" class="inputEmail">
+                    </div>
+                    <div class="formItem itemPhone">
+                        <label for="inputPhone" class="phone">Teléfono:</label>
+                        <input type="text" class="inputPhone">
+                    </div>
+
+                    <div class="formItem itemSubject">
+                        <label for="inputSubject" class="subject">Asunto:</label>
+                        <input type="text" class="inputSubject">
+                    </div>
+                    <div class="formItem itemMessage">
+                        <label for="inputMessage" class="message">Escribanos aqui:</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="bttnEnviar"><strong>Enviár</strong></button>
+                </form>
+            </div>
+            <div class="containerInfo">
+                <h3 class="subTitle">Más información</h3>
+                <ul class="listInfo">
+                    <li class="moreInfo"><i class="fa-solid fa-location-dot"></i> Los Crisantemos 265, B1669 Pilar, Provincia de
+                        Buenos Aires</li>
+                    <li class="moreInfo"><i class="fa-solid fa-phone"></i> (+54) 11-6xxx-xxxx/yyyy</li>
+                    <li class="moreInfo"><i class="fa-solid fa-envelope-open"></i> info@gestiondigital.com.ar</li>
+                </ul>
+                <p class="text">Puedes contactarnos a nuestros telefonos de Lunes a Viernes, de 9 a.m. a 18 p.m. o bien enviarnos un e-mail.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="containerFooter">
+            <p class="paragraph">Todos los derechos reservados. <strong>© Gabriel Di Prinzio</strong></p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./../assets/js/script.js"></script>
+</body>
+
+</html>
