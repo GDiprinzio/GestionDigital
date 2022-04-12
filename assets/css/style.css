@@ -361,13 +361,31 @@ h1 {
         height: 20rem;
     }
 }
+@media only screen and (max-width:560px) {
+    .containerProduct {
+        gap:5rem;
+    }
+    .product {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .linkProduct>h3 {
+        margin-top: 1rem;
+    }
+    .product:hover>.layerDescription>.linkProduct h3 {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+
 /*-----SERVICIOS-----*/
 
 .continerServicios {
     display: flex;
     justify-content: center;
     height: 100vh;
-    /*align-items: center;*/
 
 }
 
@@ -381,17 +399,42 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     /*justify-content: center;*/
-    margin-top: 11rem;
-    margin-bottom: 25rem;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
     width: 100%;
-    height: fit-content;
+    height:max-content;
     background-color: rgb(17, 45, 78);
     font-size: 1.8rem;
     color: white;
     gap: 2rem;
-    padding: 1rem;
+    padding: 3rem;
+    line-height: 3rem;
+    
 }
-
+@media only screen and (max-width:768px) {
+    .continerServicios {
+        height: 125vh;
+    }
+    .containerTextService {
+        margin-top: 10rem;
+}
+@media only screen and (max-width:560px) {
+    .continerServicios {
+        height: 150vh;
+    }
+    .containerTextService {
+        margin-top: 6.5rem;
+}
+@media only screen and (max-width:450px) {
+    .continerServicios {
+        height: 175vh;
+    }
+}
+@media only screen and (max-width:380px) {
+    .continerServicios {
+        height: 200vh;
+    }
+}
 /*------Contacto-----*/
 .mainForm {
     display: flex;
@@ -400,7 +443,7 @@ h1 {
 
 .sectionForm {
     margin-top: 11rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     background-color: rgb(17, 45, 78);
     font-size: 1.8rem;
     color: white;
@@ -420,6 +463,7 @@ h1 {
 }
 
 .containerForm {
+    margin-top: 3rem;
     grid-area: form;
 
 }
