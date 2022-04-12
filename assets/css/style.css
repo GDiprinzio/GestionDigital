@@ -159,7 +159,9 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
+.paragraph{
+ line-height: 3rem;
+}
 .container {
     border-right: solid 0.5rem greenyellow;
     border-bottom: solid 0.5rem greenyellow;
@@ -180,6 +182,7 @@ h1 {
     grid-area: containerText;
     padding: 2rem;
 }
+
 
 .container1 {
     display: flex;
@@ -385,7 +388,7 @@ h1 {
 .continerServicios {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 115vh;
 
 }
 
@@ -408,15 +411,16 @@ h1 {
     color: white;
     gap: 2rem;
     padding: 3rem;
-    line-height: 3rem;
-    
+    line-height: 3.5rem;
 }
+
 @media only screen and (max-width:768px) {
     .continerServicios {
         height: 125vh;
     }
     .containerTextService {
         margin-top: 10rem;
+    }
 }
 @media only screen and (max-width:560px) {
     .continerServicios {
@@ -424,6 +428,7 @@ h1 {
     }
     .containerTextService {
         margin-top: 6.5rem;
+    }
 }
 @media only screen and (max-width:450px) {
     .continerServicios {
@@ -435,14 +440,16 @@ h1 {
         height: 200vh;
     }
 }
+
 /*------Contacto-----*/
 .mainForm {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .sectionForm {
-    margin-top: 11rem;
+    margin-top: 15rem;
     margin-bottom: 2rem;
     background-color: rgb(17, 45, 78);
     font-size: 1.8rem;
@@ -509,8 +516,6 @@ input {
     grid-area: message;
 }
 
-
-
 .formItem input,
 .formItem textarea {
     width: 100%;
@@ -572,11 +577,12 @@ input {
 }
 
 .moreInfo {
-    gap: 2rem
+    gap: 1rem;
 }
 
 @media only screen and (max-width:768px) {
     .sectionForm {
+        margin-top: 7.5rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
