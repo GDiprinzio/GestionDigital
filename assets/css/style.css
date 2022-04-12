@@ -159,9 +159,11 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
-.paragraph{
- line-height: 3rem;
+
+.paragraph {
+    line-height: 3rem;
 }
+
 .container {
     border-right: solid 0.5rem greenyellow;
     border-bottom: solid 0.5rem greenyellow;
@@ -358,16 +360,19 @@ h1 {
         height: 100rem;
         gap: 1rem;
     }
+
     .product {
         margin: 1rem;
         width: 50rem;
         height: 20rem;
     }
 }
+
 @media only screen and (max-width:560px) {
     .containerProduct {
-        gap:5rem;
+        gap: 5rem;
     }
+
     .product {
         width: 20rem;
         height: 20rem;
@@ -376,12 +381,12 @@ h1 {
     .linkProduct>h3 {
         margin-top: 1rem;
     }
+
     .product:hover>.layerDescription>.linkProduct h3 {
         margin-top: 2.5rem;
         margin-bottom: 2.5rem;
     }
 }
-
 
 /*-----SERVICIOS-----*/
 
@@ -392,20 +397,14 @@ h1 {
 
 }
 
-/*.mainSerrvice {
-    height: 220vh;
-    gap: 2rem;
-}*/
-
 .containerTextService {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /*justify-content: center;*/
     margin-top: 15rem;
     margin-bottom: 5rem;
     width: 100%;
-    height:max-content;
+    height: max-content;
     background-color: rgb(17, 45, 78);
     font-size: 1.8rem;
     color: white;
@@ -418,23 +417,28 @@ h1 {
     .continerServicios {
         height: 125vh;
     }
+
     .containerTextService {
         margin-top: 10rem;
     }
 }
+
 @media only screen and (max-width:560px) {
     .continerServicios {
         height: 150vh;
     }
+
     .containerTextService {
         margin-top: 6.5rem;
     }
 }
+
 @media only screen and (max-width:450px) {
     .continerServicios {
         height: 175vh;
     }
 }
+
 @media only screen and (max-width:380px) {
     .continerServicios {
         height: 200vh;
@@ -482,7 +486,6 @@ input {
 }
 
 .formContact {
-    /* grid-area: form;*/
     display: grid;
     padding: 2rem;
     gap: 2rem;
@@ -525,7 +528,6 @@ input {
     outline: none;
     color: white;
     border: none;
-    /*border-bottom: solid 0.5rem greenyellow;*/
     border-radius: 1rem;
     box-shadow: 0 0.25rem greenyellow;
 }
