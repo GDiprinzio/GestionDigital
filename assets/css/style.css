@@ -236,46 +236,131 @@ h1 {
 }
 
 .containerProduct {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 50rem;
     background-color: rgb(17, 45, 78);
     font-size: 1.8rem;
     color: white;
     gap: 2rem;
     padding: 2rem;
-
+    width: 100rem;
+    height: 55rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 2fr;
+    grid-template-areas: "description description description"
+        "productA productB productC";
+    gap: 2rem;
 }
 
-.containerKing {
-    list-style: none;
-    width: 15rem;
-    height: 25rem;
-    transition: 350ms;
+.product {
+    margin: auto;
+    position: relative;
+    width: 20rem;
+    height: 30rem;
+    overflow: hidden;
+    border-radius: 0.6rem;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 50);
+    align-items: center;
+    cursor: pointer;
 }
 
-.imgKing {
+.product>.imgType {
     width: 100%;
     height: 100%;
+    transition: all 500ms ease-out;
 }
 
-.containerKingProduct {
+.containerTitle {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 1rem;
-    transition: 2s;
+    height: 10rem;
+    grid-area: description;
 }
 
+.containerDocument {
+    grid-area: productA;
+}
 
-.containerKing:hover {
+.containerBluePrint {
+    grid-area: productB;
+}
+
+.containerBooks {
+    grid-area: productC;
+}
+
+.layerDescription {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 133, 0.6);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+
+.product:hover {
     border-right: solid 0.5rem rgb(43, 247, 247);
     border-bottom: solid 0.5rem rgb(43, 247, 247);
     border-radius: 1rem;
     box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
     transform: scale(1.1);
+
 }
 
+.product:hover>.layerDescription {
+    opacity: 1;
+    visibility: visible;
+}
+
+.linkProduct {
+    text-decoration: none;
+}
+
+.product:hover>.layerDescription>.linkProduct h3 {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+}
+
+.linkProduct>h3 {
+    color: #fff;
+    font-weight: 120px;
+    font-size: x-large;
+    margin-top: 3rem;
+    margin-bottom: 12rem;
+    transition: all 500ms ease-out;
+    text-decoration: none;
+}
+
+.linkProduct>p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 22rem;
+    margin: auto;
+    gap: 1rem;
+}
+
+@media only screen and (max-width:768px) {
+    .containerProduct {
+        margin-top: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100rem;
+        gap: 1rem;
+    }
+    .product {
+        margin: 1rem;
+        width: 50rem;
+        height: 20rem;
+    }
+}
 /*-----SERVICIOS-----*/
 
 .continerServicios {
@@ -304,7 +389,7 @@ h1 {
     font-size: 1.8rem;
     color: white;
     gap: 2rem;
-    padding:1rem;
+    padding: 1rem;
 }
 
 /*------Contacto-----*/
@@ -410,7 +495,8 @@ input {
     cursor: pointer;
 }
 
-.bttnEnviar:hover, .bttnEnviar:focus {
+.bttnEnviar:hover,
+.bttnEnviar:focus {
     background-color: greenyellow;
     color: rgba(17, 45, 78);
     border-right: solid 0.5rem rgb(43, 247, 247);
