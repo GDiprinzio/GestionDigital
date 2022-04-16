@@ -9,11 +9,11 @@ html {
     /*1rem==10px*/
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;1,500&display=swap') !important;
 /*font-family: 'Montserrat', sans-serif; font-family: 'Roboto', sans-serif;*/
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,46 +25,45 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 48px;
-    font-style: italic;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 48px !important;
+    font-weight: bold;
+    font-style: italic !important;
 }
 
 /*-----HEADER-NAV-----*/
 
-.header {
+.navbar {
     background-color: rgb(17, 45, 78);
-    height: 10rem;
+    /*--height: 10rem;
     position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 0;--*/
 }
 
 
-.navHeader {
+/*--.navHeader {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-}
+}--*/
 
 .imgLogo {
     height: 9rem;
     margin-left: 4rem;
 }
 
-.navMenu {
+/*--.navMenu {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-right: 4rem;
 
-}
-
-
-.navItem {
+}--*/
+.nav-item {
     list-style: none;
     font-size: 1.8rem;
     margin: 0 1rem;
@@ -73,19 +72,21 @@ h1 {
     width: max-content;
 }
 
-.navLinkList {
+.navbar-link {
+    font-family: 'Montserrat', sans-serif;
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
     padding: .8rem 1.2rem;
     border-radius: 6rem;
     transition: 250ms ease-in-out;
 }
 
-.navLinkList:hover {
+.navbar-link:hover {
+    color: white;
     border-bottom: solid .5rem greenyellow;
 }
 
-.navToggleMenu {
+/*.navToggleMenu {
     color: white;
     background: none;
     border: none;
@@ -94,7 +95,7 @@ h1 {
     line-height: 6rem;
     display: none;
     cursor: pointer;
-}
+}*/
 
 @media only screen and (max-width:768px) {
     body {
@@ -102,7 +103,7 @@ h1 {
         margin-bottom: 30rem;
     }
 
-    .navMenu {
+/*    .navMenu {
         background-color: rgb(17, 45, 78);
         flex-direction: column;
         justify-content: flex-start;
@@ -131,11 +132,11 @@ h1 {
 
     .navToggleMenu:focus:not(:focus-visible) {
         outline: none;
-    }
+    }*/
 
 }
 
-.containerFooter {
+/*.containerFooter {
     position: fixed;
     background-color: rgb(17, 45, 78);
     color: white;
@@ -144,7 +145,7 @@ h1 {
     height: 2.5rem;
     width: 100%;
     bottom: 0;
-}
+}*/
 
 /*-----INDEX-NOSOTROS-----*/
 
@@ -166,7 +167,7 @@ h1 {
     line-height: 3rem;
 }
 
-.container {
+.containerBorder {
     border-right: solid 0.5rem greenyellow;
     border-bottom: solid 0.5rem greenyellow;
     border-radius: 1rem;
@@ -196,6 +197,7 @@ h1 {
 }
 
 .container2 {
+    background-color: #fff !important;
     grid-area: container2;
 }
 
@@ -211,7 +213,7 @@ h1 {
     }
 }
 
-.imgSlides {
+/*.imgSlides {
     display: none;
     height: 100%;
 }
@@ -229,7 +231,7 @@ h1 {
     to {
         opacity: 1
     }
-}
+}*/
 
 /*-----PRODUCTOS-----*/
 
@@ -407,7 +409,7 @@ h1 {
     flex-wrap: wrap;
     margin-top: 5rem;
 }
-.ItemScanner{
+/*.ItemScanner{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -420,14 +422,13 @@ h1 {
 }
 .imgScanner{
  width: 100%;
-}
+}*/
 
-.ItemScanner:hover{
+.card:hover{
 transform: scale(1.2);
 border-right: solid 0.5rem rgb(43, 247, 247);
 border-bottom: solid 0.5rem rgb(43, 247, 247);
 border-radius: 1rem;
-letter-spacing: .2rem;
 box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
 transform: scale(1.04);
 }
@@ -437,7 +438,7 @@ transform: scale(1.04);
 .continerServicios {
     display: flex;
     justify-content: center;
-    height: 115vh;
+    height: 140vh;
 
 }
 
@@ -459,7 +460,7 @@ transform: scale(1.04);
 
 @media only screen and (max-width:768px) {
     .continerServicios {
-        height: 125vh;
+        height: 145vh;
     }
 
     .containerTextService {
@@ -469,7 +470,7 @@ transform: scale(1.04);
 
 @media only screen and (max-width:560px) {
     .continerServicios {
-        height: 150vh;
+        height: 165vh;
     }
 
     .containerTextService {
@@ -479,13 +480,13 @@ transform: scale(1.04);
 
 @media only screen and (max-width:450px) {
     .continerServicios {
-        height: 175vh;
+        height: 195vh;
     }
 }
 
 @media only screen and (max-width:380px) {
     .continerServicios {
-        height: 200vh;
+        height: 240vh;
     }
 }
 
@@ -581,7 +582,7 @@ input {
     grid-area: button;
     text-transform: uppercase;
     padding: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     color: white;
     letter-spacing: 0.1rem;
     border: 0;

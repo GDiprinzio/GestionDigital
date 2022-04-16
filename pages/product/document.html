@@ -5,63 +5,677 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/style.css">
     <script src="https://kit.fontawesome.com/0c8b810b9d.js" crossorigin="anonymous"></script>
     <title>Gestión Digital</title>
 </head>
 
-<body  style="background-image: url(./../../assets/img/imgDocuments.jpg);">
-    <header class="header">
+<body style="background-image: url(./../../assets/img/imgDocuments.jpg);">
+        
+    <!-- ============== HEADER ============== -->
+
+    <!--<header class="header">
         <nav class="navHeader">
-            <a href="./../../index.html" class="navLink"><img src="./../../assets/img/logo/logo_small_icon_only_inverted.png"
+            <a href="./index.html" class="navLink"><img src="./assets/img/logo/logo_small_icon_only_inverted.png"
                     alt="LOGO" class="imgLogo"></a>
             <button class="navToggleMenu" aria-label="Abrir menú.">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <ul class="navMenu">
-                <li class="navItem"><a href="./../../index.html" class="navLinkList">Inicio</a></li>
-                <li class="navItem"><a href="./../nosotros.html" class="navLinkList">Nosotros</a></li>
-                <li class="navItem"><a href="./../productos.html" class="navLinkList">Productos</a></li>
-                <li class="navItem"><a href="./../servicios.html" class="navLinkList">Servicios</a></li>
-                <li class="navItem"><a href="./../contacto.html" class="navLinkList">Contacto</a></li>
+                <li class="navItem"><a href="./index.html" class="navLinkList">Inicio</a></li>
+                <li class="navItem"><a href="./pages/nosotros.html" class="navLinkList">Nosotros</a></li>
+                <li class="navItem"><a href="./pages/productos.html" class="navLinkList">Productos</a></li>
+                <li class="navItem"><a href="./pages/servicios.html" class="navLinkList">Servicios</a></li>
+                <li class="navItem"><a href="./pages/contacto.html" class="navLinkList">Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </header>-->
+
+    <div class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a href="./../../index.html" class="navbar-brand"><img
+                        src="./../../assets/img/logo/logo_small_icon_only_inverted.png" alt="LOGO" class="imgLogo"></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menuNav" class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item p-2"><a class="navbar-link" href="./../../index.html">Inicio</a></li>
+                        <li class="nav-item p-2"><a class="navbar-link" href="./../nosotros.html">Nosotros</a></li>
+                        <li class="nav-item p-2"><a class="navbar-link" href="./../productos.html">Productos</a></li>
+                        <li class="nav-item p-2"><a class="navbar-link" href="./../servicios.html">Servicios</a></li>
+                        <li class="nav-item p-2"><a class="navbar-link" href="./../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <main class="mainScanner">
-        <section class="containerScannerType container">
+        <section class="containerScannerType containerBorder">
             <h1 class="title">Escáneres de documentos</h1>
             <h3 class="subtitle">Escáner para el uso diario o alta producción.</h3>
             <div class="containerScanners">
-                <div class="ItemScanner container">
+                <!--<div class="ItemScanner containerBorder">
                     <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg" alt=Fujistu Fi-800r"" class="imgScanner">
                     <p class="paragraph">Fujistu Fi-800r</p>
                 </div>
-                <div class="ItemScanner container">
+                <div class="ItemScanner containerBorder">
                     <img src="./../../assets/img/scanners/fujitsu/fi-8150/fi-8150_tcm100-6506672_tcm100-2750236-32.jpg" alt="Fujitsu Fi-8150" class="imgScanner">
                     <p class="paragraph">Fujitsu Fi-8150</p>
                 </div>
-                <div class="ItemScanner container">
+                <div class="ItemScanner containerBorder">
                     <img src="./../../assets/img/scanners/fujitsu/fi-8170/fi-8170_tcm100-6506673_tcm100-2750236-32.jpg" alt="Fujitsu Fi-8170" class="imgScanner">
                     <p class="paragraph">Fujitsu Fi-8170</p>
                 </div>
-                <div class="ItemScanner container">
+                <div class="ItemScanner containerBorder">
                     <img src="./../../assets/img/scanners/fujitsu/fi-7600/fi-7600_tcm100-4471773_tcm100-2750236-32.jpg" alt="Fujitsu Fi-7600" class="imgScanner">
                     <p class="paragraph">Fujitsu Fi-7600</p>
                 </div>
-                <div class="ItemScanner container">
+                <div class="ItemScanner containerBorder">
                     <img src="./../../assets/img/scanners/fujitsu/fi-7900/fi-7900_tcm100-4471768_tcm100-2750236-32.jpg" alt="Fujitsu Fi-7900" class="imgScanner">
                     <p class="paragraph">Fujitsu Fi-7900</p>
+                </div>-->
+                <div class="card containerBorder" style="width: 18rem; height: 22rem;">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                        class="card-img-top" alt="Fujitsu Fi-800r">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#fi-800r">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder" style="width: 18rem; height: 22rem;">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-8150/fi-8150_tcm100-6506672_tcm100-2750236-32.jpg"
+                        class="card-img-top" alt="Fujitsu Fi-8150">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Fujitsu Fi-8150</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#fi-8150">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder" style="width: 18rem; height: 22rem;">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-8170/fi-8170_tcm100-6506673_tcm100-2750236-32.jpg"
+                        class="card-img-top" alt="Fujitsu Fi-8170">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Fujitsu Fi-8170</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#fi-8170">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder" style="width: 18rem; height: 22rem;">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-7600/fi-7600_tcm100-4471773_tcm100-2750236-32.jpg"
+                        class="card-img-top" alt="Fujitsu Fi-7600">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Fujitsu Fi-7600</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#fi-7600">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder" style="width: 18rem; height: 22rem;">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-7900/fi-7900_tcm100-4471768_tcm100-2750236-32.jpg"
+                        class="card-img-top" alt="Fujitsu Fi-7900">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Fujitsu Fi-7900</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#fi-7900">
+                            Mas información
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+        <div class="modal fade" id="fi-800r" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn-close fs-3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_front_mix-set_e_tcm100-4811821_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_left_all-open_tcm100-4811822_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tipo de escáner</th>
+                                                <td>ADF (Alimentador automático de documentos), Dúplex + Alimentacion
+                                                    manual de 1 hoja (Digitalización con Retorno), Scanner Trabajo en
+                                                    Grupo</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Capacidad del ADF</th>
+                                                <td>20 x A4: 80 g/m2
+                                                    30 x A4: 52 g/m2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Modos de color de la digitalización</th>
+                                                <td>Color, escala de grises, monocromo, detección automática (color,
+                                                    escala de grises, monocromo).</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td>600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo de sensor de imagen</th>
+                                                <td>CIS en color x 2 (frontal x1 y trasero x1)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fuente de luz</th>
+                                                <td>3 LED de 3 colores (rojo/verde/azul) (frontal x1 y trasero x1) </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interfaz</th>
+                                                <td>USB 3.2 Gen 1 / USB 3.0 / USB 2.0 / USB1.1 (Conector typo B / typo B
+                                                    Superspeed)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fi-8150" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_front_mix-set_e_tcm100-4811821_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_left_all-open_tcm100-4811822_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tipo de escáner</th>
+                                                <td>ADF (Alimentador automático de documentos), Dúplex + Alimentacion
+                                                    manual de 1 hoja (Digitalización con Retorno), Scanner Trabajo en
+                                                    Grupo</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Capacidad del ADF</th>
+                                                <td>20 x A4: 80 g/m2
+                                                    30 x A4: 52 g/m2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Modos de color de la digitalización</th>
+                                                <td>Color, escala de grises, monocromo, detección automática (color,
+                                                    escala de grises, monocromo).</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td>600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo de sensor de imagen</th>
+                                                <td>CIS en color x 2 (frontal x1 y trasero x1)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fuente de luz</th>
+                                                <td>3 LED de 3 colores (rojo/verde/azul) (frontal x1 y trasero x1) </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interfaz</th>
+                                                <td>USB 3.2 Gen 1 / USB 3.0 / USB 2.0 / USB1.1 (Conector typo B / typo B
+                                                    Superspeed)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fi-8170" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_front_mix-set_e_tcm100-4811821_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_left_all-open_tcm100-4811822_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tipo de escáner</th>
+                                                <td>ADF (Alimentador automático de documentos), Dúplex + Alimentacion
+                                                    manual de 1 hoja (Digitalización con Retorno), Scanner Trabajo en
+                                                    Grupo</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Capacidad del ADF</th>
+                                                <td>20 x A4: 80 g/m2
+                                                    30 x A4: 52 g/m2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Modos de color de la digitalización</th>
+                                                <td>Color, escala de grises, monocromo, detección automática (color,
+                                                    escala de grises, monocromo).</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td>600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo de sensor de imagen</th>
+                                                <td>CIS en color x 2 (frontal x1 y trasero x1)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fuente de luz</th>
+                                                <td>3 LED de 3 colores (rojo/verde/azul) (frontal x1 y trasero x1) </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interfaz</th>
+                                                <td>USB 3.2 Gen 1 / USB 3.0 / USB 2.0 / USB1.1 (Conector typo B / typo B
+                                                    Superspeed)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fi-7600" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_front_mix-set_e_tcm100-4811821_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_left_all-open_tcm100-4811822_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tipo de escáner</th>
+                                                <td>ADF (Alimentador automático de documentos), Dúplex + Alimentacion
+                                                    manual de 1 hoja (Digitalización con Retorno), Scanner Trabajo en
+                                                    Grupo</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Capacidad del ADF</th>
+                                                <td>20 x A4: 80 g/m2
+                                                    30 x A4: 52 g/m2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Modos de color de la digitalización</th>
+                                                <td>Color, escala de grises, monocromo, detección automática (color,
+                                                    escala de grises, monocromo).</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td>600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo de sensor de imagen</th>
+                                                <td>CIS en color x 2 (frontal x1 y trasero x1)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fuente de luz</th>
+                                                <td>3 LED de 3 colores (rojo/verde/azul) (frontal x1 y trasero x1) </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interfaz</th>
+                                                <td>USB 3.2 Gen 1 / USB 3.0 / USB 2.0 / USB1.1 (Conector typo B / typo B
+                                                    Superspeed)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fi-7900" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Fujitsu Fi-800r</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="0" class="active" aria-current="true"
+                                                aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleIndicators"
+                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_front_mix-set_e_tcm100-4811821_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800R_left_all-open_tcm100-4811822_tcm100-2750236-32.jpg"
+                                                    class="d-block w-100" alt="...">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">Tipo de escáner</th>
+                                                <td>ADF (Alimentador automático de documentos), Dúplex + Alimentacion
+                                                    manual de 1 hoja (Digitalización con Retorno), Scanner Trabajo en
+                                                    Grupo</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Capacidad del ADF</th>
+                                                <td>20 x A4: 80 g/m2
+                                                    30 x A4: 52 g/m2</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Modos de color de la digitalización</th>
+                                                <td>Color, escala de grises, monocromo, detección automática (color,
+                                                    escala de grises, monocromo).</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td>600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tipo de sensor de imagen</th>
+                                                <td>CIS en color x 2 (frontal x1 y trasero x1)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Fuente de luz</th>
+                                                <td>3 LED de 3 colores (rojo/verde/azul) (frontal x1 y trasero x1) </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Interfaz</th>
+                                                <td>USB 3.2 Gen 1 / USB 3.0 / USB 2.0 / USB1.1 (Conector typo B / typo B
+                                                    Superspeed)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </main>
-    <footer class="footer">
+
+    <!-- ============== FOOTER ============== -->
+
+    <!--    <footer class="footer">
         <div class="containerFooter">
             <p class="paragraph">Todos los derechos reservados. <strong>© Gabriel Di Prinzio</strong></p>
         </div>
+    </footer>-->
+    <footer class="text-center text-white fixed-bottom" style="background-color: rgb(17, 45, 78);">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="info"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-light m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-light p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-light" href="#">GDiPrinzio.com</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./../../assets/js/script.js"></script>
 </body>
