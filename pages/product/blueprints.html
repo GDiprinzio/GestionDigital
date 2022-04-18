@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/style.css">
     <script src="https://kit.fontawesome.com/0c8b810b9d.js" crossorigin="anonymous"></script>
     <title>Gestión Digital</title>
 </head>
 
 <body style="background-image: url(./../../assets/img/imgBluePrints.jpg);">
-                
+
     <!-- ============== HEADER ============== -->
 
     <!--<header class="header">
@@ -56,26 +58,678 @@
         </nav>
     </div>
 
-    <main class="main">
+    <main class="mainScanner">
         <section class="containerScannerType containerBorder">
             <h1 class="title">Escáneres de planos</h1>
-            <h3 class="subtitle">Escaner para la digitalización de material de gran formato.</h3>
+            <h3 class="subtitle">Escaner para la digitalización de material de gran formato, planos, estudios
+                geológicos, telas.</h3>
+            <div class="dropdown mt-5">
+                <a class="btn btn-lg btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Productos
+                </a>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="./document.html">Escáneres de documentos</a></li>
+                    <li><a class="dropdown-item disabled">Escáneres de planos</a></li>
+                    <li><a class="dropdown-item" href="./books.html">Escáneres de Libros</a></li>
+                </ul>
+            </div>
             <div class="containerScanners">
-                <div class="ItemScanner containerBorder">
-                    <img src="./../../assets/img/scanners/Contex/IQ-QuattroX/IQ-Quattro-X_44_iPad_600x800.png" alt="Contex IQ Quattro X" class="imgScanner">
-                    <p class="paragraph">Contex IQ Quattro X</p>
+                <!--<div class="ItemScanner containerBorder">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-800r/fi-800r_tcm100-4471730_tcm100-2750236-32.jpg" alt=Fujistu Fi-800r"" class="imgScanner">
+                    <p class="paragraph">Fujistu Fi-800r</p>
                 </div>
                 <div class="ItemScanner containerBorder">
-                    <img src="./../../assets/img/scanners/Contex/HD-UltraX/HD-Ultra-X-Nextimage-Remote_800-x-600px.png" alt="Contex HD Ultra X" class="imgScanner">
-                    <p class="paragraph">Contex HD Ultra X</p>
+                    <img src="./../../assets/img/scanners/fujitsu/fi-8150/fi-8150_tcm100-6506672_tcm100-2750236-32.jpg" alt="Fujitsu Fi-8150" class="imgScanner">
+                    <p class="paragraph">Fujitsu Fi-8150</p>
                 </div>
                 <div class="ItemScanner containerBorder">
-                    <img src="./../../assets/img/scanners/ImageAccess/widetek48/WT48-600_RENDER_FRONTAL_stage.png" alt="ImageAccess WideTek 48" class="imgScanner">
-                    <p class="paragraph">WideTek 48</p>
+                    <img src="./../../assets/img/scanners/fujitsu/fi-8170/fi-8170_tcm100-6506673_tcm100-2750236-32.jpg" alt="Fujitsu Fi-8170" class="imgScanner">
+                    <p class="paragraph">Fujitsu Fi-8170</p>
+                </div>
+                <div class="ItemScanner containerBorder">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-7600/fi-7600_tcm100-4471773_tcm100-2750236-32.jpg" alt="Fujitsu Fi-7600" class="imgScanner">
+                    <p class="paragraph">Fujitsu Fi-7600</p>
+                </div>
+                <div class="ItemScanner containerBorder">
+                    <img src="./../../assets/img/scanners/fujitsu/fi-7900/fi-7900_tcm100-4471768_tcm100-2750236-32.jpg" alt="Fujitsu Fi-7900" class="imgScanner">
+                    <p class="paragraph">Fujitsu Fi-7900</p>
+                </div>-->
+
+                <!-- ============== CARD ============== -->
+
+                <div class="card containerBorder align-items-cente" style="width: 18rem; height: 25rem;">
+                    <img src="./../../assets/img/scanners/Contex/HD-UltraX/HD-Ultra-X-Nextimage-Remote_800-x-600px.png"
+                        class="card-img-top" alt="Contex HD Ultra X">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Contex HD Ultra X</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal"
+                            data-bs-target="#ContexHDUltraX">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder d-flex align-center" style="width: 18rem; height: 25rem;">
+                    <img src="./../../assets/img/scanners/Contex/IQ-QuattroX/IQ-Quattro-X_44_iPad_600x800.png"
+                        class="card-img-top" alt="Contex IQ Quattro X">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Contex IQ Quattro X</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal"
+                            data-bs-target="#ContexIQQuattroX">
+                            Mas información
+                        </button>
+                    </div>
+                </div>
+                <div class="card containerBorder d-flex align-center" style="width: 18rem; height: 25rem;">
+                    <img src="./../../assets/img/scanners/ImageAccess/widetek48/WT48-600_RENDER_FRONTAL_stage.png"
+                        class="card-img-top" alt="ImageAccess Widetek 48">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title text-center text-dark">Widetek 48</h5>
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal"
+                            data-bs-target="#Widetek48">
+                            Mas información
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- ============== MODAL - SPECIFICATIONS ============== -->
+
+        <!-- ============== MODAL - ContexHDUltraX ============== -->
+        <div class="modal fade" id="ContexHDUltraX" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contex HD Ultra X</h5>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://contex.com/wp-content/uploads/2018/05/Contex_Datasheet_HD-Ultra-X-series_V1.6_ES.pdf"
+                                        target="blank"">Folleto</a>
+                                </li>
+                                <li><a class=" dropdown-item" href="./../contacto.html">Contactenos</a></li>
+                                <li><a class="dropdown-item" data-bs-dismiss="modal">Cerrar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex">
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div id="carouselExampleControls" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="./../../assets/img/scanners/Contex/HD-UltraX/HD-Ultra-X-6000_scanstation-pro_slider-web_800x600.png"
+                                                        class="d-block w-100" alt="Contex HD-UltraX">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./../../assets/img/scanners/Contex/HD-UltraX/HD-Ultra-X-Nextimage-Remote_800-x-600px.png"
+                                                        class="d-block w-100" alt="Contex HD-UltraX">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./../../assets/img/scanners/Contex/HD-UltraX/HD-Ultra-X-6000__slider-web_800x600.png"
+                                                        class="d-block w-100" alt="Contex HD-UltraX">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden"></span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid d-flex  col-6">
+                                        <iframe  src="https://www.youtube.com/embed/6LQ6qDSJ8jk"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Características / modelo </th>
+                                                <th scope="col">HD ULTRA X 6050</th>
+                                                <th scope="col">HD ULTRA X 6090</th>
+                                                <th scope="col">HD ULTRA X 4250</th>
+                                                <th scope="col">HD ULTRA X 4290</th>
+                                                <th scope="col">HD ULTRA X 3650</th>
+                                                <th scope="col">HD ULTRA X 3690</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Anchura máxima de escaneado</th>
+                                                <td class="text-center" colspan="2">60 pulgadas (1524 mm)</td>
+                                                <td class="text-center" colspan="2">42 pulgadas (1067 mm)</td>
+                                                <td class="text-center" colspan="2">36 pulgadas (914 mm)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Altura de trabajo</th>
+                                                <td class="text-center" colspan="6">36,3/37,3/38,3 pulgadas (922/947/972
+                                                    mm)</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="7" scope="row">VELOCIDAD DE ESCANEADO2 (IN/S) Con la
+                                                    anchura máxima de escaneado</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Color RGB 200 ppp</th>
+                                                <td class="text-center">8,9</td>
+                                                <td class="text-center">17,8</td>
+                                                <td class="text-center">8,9</td>
+                                                <td class="text-center">17,8</td>
+                                                <td class="text-center">8,9</td>
+                                                <td class="text-center">17,8</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">La velocidad de color se puede actualizar</th>
+                                                <td class="text-center"><i class="fa-solid fa-arrow-up"></i></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-check"></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-arrow-up"></i></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-check"></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-arrow-up"></i></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Escala de grises/monocromático 200 ppp</th>
+                                                <td class="text-center" colspan="7">17,8</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="7" scope="row">PRODUCTIVIDAD (DOCUMENTOS/HORA)
+                                                    Escaneado por lotes durante 60 minutos. Incluye el tiempo de carga y
+                                                    expulsión del papel. Medido en cantidad de escaneados completos</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tamaño Arch E, retrato, monocromático/color RGB, 200 ppp</th>
+                                                <td class="text-center">875/519</td>
+                                                <td class="text-center">875</td>
+                                                <td class="text-center">875/519</td>
+                                                <td class="text-center">875</td>
+                                                <td class="text-center">875/519</td>
+                                                <td class="text-center">875</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tamaño Arch E, paisaje, monocromático/color RGB, 200 ppp</th>
+                                                <td class="text-center">1055/642</td>
+                                                <td class="text-center">10903td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tamaño A0, retrato, monocromático/color RGB, 200 ppp</th>
+                                                <td class="text-center">903/537</td>
+                                                <td class="text-center">903</td>
+                                                <td class="text-center">903/537</td>
+                                                <td class="text-center">903</td>
+                                                <td class="text-center">903/537</td>
+                                                <td class="text-center">903</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tamaño A0, paisaje, monocromático/color RGB, 200 ppp</th>
+                                                <td class="text-center">1057/693</td>
+                                                <td class="text-center">1057</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Anchura máxima del soporte</th>
+                                                <td class="text-center" colspan="2">61,8 pulgadas (1570mm)</td>
+                                                <td class="text-center" colspan="4">43,3 pulgadas (1100mm)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td class="text-center" colspan="6">1200 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución máxima</th>
+                                                <td class="text-center" colspan="6">9600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Cámaras CCD</th>
+                                                <td class="text-center" colspan="2">CCD de color lineal 7 x 4
+                                                    (RGB y gris)</td>
+                                                <td class="text-center" colspan="4">CCD de color lineal 5 x 4
+                                                    (RGB y gris)</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Profundidad de foco</th>
+                                                <td class="text-center" colspan="6">0,3 pulgadas (7 mm)</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Grosor máximo del soporte</th>
+                                                <td class="text-center" colspan="6">0,6 pulgadas (15 mm)</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Número total de píxeles</th>
+                                                <td class="text-center" colspan="2">299 040 píxeles</td>
+                                                <td class="text-center" colspan="4">213 600 píxeles</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Precisión</th>
+                                                <td class="text-center" colspan="6">0,6 pulgadas (15 mm)</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Captura de datos (color/monocromático</th>
+                                                <td class="text-center" colspan="6">Color 48 bits / escala de grises 16 bits</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Espacio de color</th>
+                                                <td class="text-center" colspan="6">Adobe RGB, Dispositivo RGB, RAW RGB, sRGB</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Conectividad</th>
+                                                <td class="text-center" colspan="6">USB 3.0 con xDTR3, Ethernet gigabit con xDTR2.5</td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============== MODAL - ContexIQQuattroX ============== -->
+        <div class="modal fade" id="ContexIQQuattroX" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contex IQ QuattroX</h5>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="https://contex.com/wp-content/uploads/2020/06/Contex_Datasheet_IQ-Quattro-X_V1.2_ES.pdf"
+                                        target="blank"">Folleto</a>
+                                </li>
+                                <li><a class=" dropdown-item" href="./../contacto.html">Contactenos</a></li>
+                                <li><a class="dropdown-item" data-bs-dismiss="modal">Cerrar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-body d-flex">
+                        <div class="container-fluid">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div id="carouselExampleControls" class="carousel slide"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="./../../assets/img/scanners/Contex/IQ-QuattroX/IQ-Quattro-X_44_Computer_600x800.png"
+                                                        class="d-block w-100" alt="Contex IQ QuattroX">
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src="./../../assets/img/scanners/Contex/IQ-QuattroX/IQ-Quattro-X_44_iPad_600x800.png"
+                                                        class="d-block w-100" alt="Contex IQ QuattroX">
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden"></span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button"
+                                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid d-flex  col-6">
+                                        <iframe src="https://www.youtube.com/embed/otm-jcseIH4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <div class="container-fluid">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Características / modelo </th>
+                                                <th scope="col">IQ QUATTRO X 3650</th>
+                                                <th scope="col">IQ QUATTRO X 3690</th>
+                                                <th scope="col">IQ QUATTRO X 4450</th>
+                                                <th scope="col">IQ QUATTRO X 4490</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Anchura máxima de escaneado</th>
+                                                <td class="text-center" colspan="2">914 mm</td>
+                                                <td class="text-center" colspan="2">1118 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Anchura máxima del medio</th>
+                                                <td class="text-center" colspan="2">956 mm</td>
+                                                <td class="text-center" colspan="2">1194 mm</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="5" scope="row">Velocidad de escaneado1 (mm/s). Documentos de 91 cm de ancho.</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Color RGB 200 ppp</th>
+                                                <td class="text-center">226,06</td>
+                                                <td class="text-center">452,12</td>
+                                                <td class="text-center">226,06</td>
+                                                <td class="text-center">452,12</td>
+
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Color con posibilidad de ampliación hasta 452,12 mm/s</th>
+                                                <td class="text-center"><i class="fa-solid fa-arrow-up"></i></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-check"></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-arrow-up"></i></i></td>
+                                                <td class="text-center"><i class="fa-solid fa-check"></i></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Escala de grises/monocromático 200 ppp</th>
+                                                <<td class="text-center" colspan="2">452.12</td>
+                                                <td class="text-center" colspan="2">452.12</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="5" scope="row">PRODUCTIVIDAD (DOCUMENTOS/HORA)
+                                                    Escaneado por lotes durante 60 minutos. Incluye el tiempo de carga y
+                                                    expulsión del papel. Medido en cantidad de escaneados completos</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tamaño Arch E, retrato, monocromático/color RGB, 200 ppp</th>
+                                                <td class="text-center">523</td>
+                                                <td class="text-center">856</td>
+                                                <td class="text-center">523</td>
+                                                <td class="text-center">856</td>
+                                            </tr>
+                                            <tr>
+                                                <th colspan="5" scope="row">Especificaciones</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Grosor máximo del soporte</th>
+                                                <td class="text-center" colspan="4">2 mm para documentos flexibles</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución óptica</th>
+                                                <td class="text-center" colspan="4">1200 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Resolución máxima</th>
+                                                <td class="text-center" colspan="4">9600 ppp</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Número total de píxeles</th>
+                                                <td class="text-center" colspan="2">54.000 píxeles</td>
+                                                <td class="text-center" colspan="2">64.800 píxeles</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tecnologías CIS clave de Contex</th>
+                                                <td class="text-center" colspan="4">CleanScan, SIGMA, CFR</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Justificación de documentos</th>
+                                                <td class="text-center" colspan="4">Carga central flexible debido al tamaño automático</td> 
+                                            </tr>
+                                            
+                                            <tr>
+                                                <th scope="row">Precisión</th>
+                                                <td class="text-center" colspan="6">0,1 % +/- 1 píxel</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Captura de datos (color/monocromático</th>
+                                                <td class="text-center" colspan="6">Color 48 bits / escala de grises 16 bits</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Espacio de color</th>
+                                                <td class="text-center" colspan="6">Adobe RGB, Dispositivo RGB, RAW RGB, sRGB</td> 
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Conectividad</th>
+                                                <td class="text-center" colspan="6">USB 3.0 con xDTR3, Ethernet gigabit con xDTR2.5</td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============== MODAL - Widetek48 ============== -->
+        <div class="modal fade" id="Widetek48" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ImageAccess Widetek 48</h5>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item"
+                                    href="https://contex.com/wp-content/uploads/2020/06/Contex_Datasheet_IQ-Quattro-X_V1.2_ES.pdf"
+                                    target="blank"">Folleto</a>
+                            </li>
+                            <li><a class=" dropdown-item" href="./../contacto.html">Contactenos</a></li>
+                            <li><a class="dropdown-item" data-bs-dismiss="modal">Cerrar</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-body d-flex">
+                    <div class="container-fluid">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div id="carouselExampleControls" class="carousel slide"
+                                        data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./../../assets/img/scanners/ImageAccess/widetek48/WT48-600_RENDER_DIAGONAL_POSTER_stage.png"
+                                                    class="d-block w-100" alt="ImageAccess Widetek 48">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/ImageAccess/widetek48/WT48-600_RENDER_FRONTAL_stage.png"
+                                                    class="d-block w-100" alt="ImageAccess Widetek 48">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./../../assets/img/scanners/ImageAccess/widetek48/WT48-600_RENDER_FRONTAL_TOUCH22AA_stage.png"
+                                                    class="d-block w-100" alt="ImageAccess Widetek 48">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="container-fluid d-flex  col-6">
+                                    <iframe src="https://www.youtube.com/embed/l9N0CEoY8ww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Document</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Maximum Document Size</th>
+                                        <td>1270 mm (50 inch) width. Information about the maximum scan length in the technical
+                                            specification.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Maximum Scan Width</th>
+                                        <td>max. 1220 mm (48 inch)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Autoformat Size Recognition</th>
+                                        <td>yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th>DIN Format</th>
+                                        <td>DIN A5 &ndash; DIN A0</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ANSI Format</th>
+                                        <td>Legal, US E</td>
+                                    </tr>
+                                    <tr>
+                                        <th>User Defined Format</th>
+                                        <td>yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Document Thickness</th>
+                                        <td>max. 2.5 mm (0.1 in.)</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Output</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Scanner Resolution</th>
+                                        <td>1200 x 1200 dpi (optionally 9600 x 9600 dpi interpolated)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Optical Resolution</th>
+                                        <td>1200 x 600 dpi</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Pixel Dimension</th>
+                                        <td> 9.3 x 9.3 µm</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Paper Path</th>
+                                        <td>Face up, Front entry, Front or rear exit</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Scan Speed Color</th>
+                                        <td>200 dpi &ndash; 18.4 m/min (12.1 inch/s)<br> 300 dpi &ndash; 12.3 m/min (8.1 inch/s)<br> 600
+                                            dpi &ndash; 6 m/min (4 inch/s)<br> 1200 dpi &ndash; 1.5 m/min (1 inch/s)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Scan Speed BW</th>
+                                        <td>Same as 24 bit Color</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color Depth</th>
+                                        <td>36 bit color, 12 bit grayscale</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Scan Output</th>
+                                        <td>24 bit color, 8 bit grayscale, bitonal, enhanced halftone</td>
+                                    </tr>
+                                    <tr>
+                                        <th>File Formats</th>
+                                        <td>PDF, PDF/A, JPEG, PNM, TIFF uncompressed, <br>TIFF G4 (CCITT), Multipage PDF, TIFF</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Accuracy</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Scan direction</th>
+                                        <td>± 0.08% across 36 inch scanning width</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Transport direction</th>
+                                        <td>± 0.08% with new transport rollers</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Technical Specifications</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Computer</th>
+                                        <td>64 bit Linux, Intel i3, quad core processor,<br> 8 Gigabyte RAM, 320GB HDD for extra large
+                                            jobs
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Interface</th>
+                                        <td>1 GBit Fast Ethernet with TCP/IP based Scan2Net(R) interface</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Camera</th>
+                                        <td>4x Tri-color CCD camera, 90,000 pixels, encapsulated and dust-proof</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Light Source</th>
+                                        <td>Two lamps with 204 white LEDs each, no IR/UV emission</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lamp Life Time</th>
+                                        <td>50,000 h (typ.)</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Dimensions</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Dimensions Scanner</th>
+                                        <td>228 x 1425 x 507 mm (9 x 56.1 x 20 inch) <br>(H x W x D)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Weight Scanner</th>
+                                        <td>~53 kg (117 lbs.)</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Electrical Specifications</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Electrical Connection</th>
+                                        <td>100-240 V AC, 47 &ndash; 63 Hz (external power supply, <br>complies with ECO standard CEC
+                                            level V)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Power Consumption</th>
+                                        <td>0.5 W (Sleep) / 4.8 W (Standby) / <br>46 W (Ready to scan) / 86 W (Scanning)</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2" class="text-center">Ambient Conditions</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Operating Temp</th>
+                                        <td>5 to 40 &deg;C, 40 to 105 &deg;F</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Rel Humidity</th>
+                                        <td>20 to 80 % (non-condensing)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Noise</th>
+                                        <td>&lt; 35 dB(A) (Scanning) / &lt; 25 dB(A) (Standby)</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
 
     <!-- ============== FOOTER ============== -->

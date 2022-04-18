@@ -81,10 +81,13 @@ h1 {
     transition: 250ms ease-in-out;
 }
 
+
 .navbar-link:hover {
     color: white;
     border-bottom: solid .5rem greenyellow;
 }
+
+
 
 /*.navToggleMenu {
     color: white;
