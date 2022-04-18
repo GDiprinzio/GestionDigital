@@ -33,13 +33,14 @@ h1 {
 
 /*-----HEADER-NAV-----*/
 
+}
 .navbar {
     background-color: rgb(17, 45, 78);
     /*--height: 10rem;
-    position: fixed;
+    position: fixed;;--*/
     width: 100%;
     top: 0;
-    left: 0;--*/
+    left: 0;
 }
 
 
