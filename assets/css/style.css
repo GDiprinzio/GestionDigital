@@ -489,7 +489,7 @@ transform: scale(1.04);
 
 @media only screen and (max-width:380px) {
     .continerServicios {
-        height: 240vh;
+        height: 250vh;
     }
 }
 
@@ -636,6 +636,9 @@ input {
         margin-top: 7.5rem;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        gap: 3.7rem;
+    }
+    .containerForm {
+        margin-top: 5rem;
     }
 }
