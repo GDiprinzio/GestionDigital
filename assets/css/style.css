@@ -36,34 +36,16 @@ h1 {
 
 .navbar {
     background-color: rgb(17, 45, 78);
-    /*--height: 10rem;
-    position: fixed;;--*/
     width: 100%;
     top: 0;
     left: 0;
 }
-
-
-/*--.navHeader {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}--*/
 
 .imgLogo {
     height: 9rem;
     margin-left: 4rem;
 }
 
-/*--.navMenu {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 4rem;
-
-}--*/
 .nav-item {
     list-style: none;
     font-size: 1.8rem;
@@ -82,74 +64,10 @@ h1 {
     transition: 250ms ease-in-out;
 }
 
-
 .navbar-link:hover {
     color: white;
     border-bottom: solid .5rem greenyellow;
 }
-
-
-
-/*.navToggleMenu {
-    color: white;
-    background: none;
-    border: none;
-    font-size: 3rem;
-    padding: 0 2rem;
-    line-height: 6rem;
-    display: none;
-    cursor: pointer;
-}*/
-
-@media only screen and (max-width:768px) {
-    body {
-        padding-top: 7rem;
-        margin-bottom: 30rem;
-    }
-
-/*    .navMenu {
-        background-color: rgb(17, 45, 78);
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin-right: 2rem;
-        position: fixed;
-        left: 0;
-        top: 10rem;
-        width: 100%;
-        padding: 2rem 0;
-        height: auto;
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.5s;
-        
-    }
-
-    .navToggleMenu {
-        display: block;
-    }
-
-    .navMenu_visible {
-        left: 0;
-        z-index: 10;
-    }
-
-    .navToggleMenu:focus:not(:focus-visible) {
-        outline: none;
-    }*/
-
-}
-
-/*.containerFooter {
-    position: fixed;
-    background-color: rgb(17, 45, 78);
-    color: white;
-    display: flex;
-    align-items: center;
-    height: 2.5rem;
-    width: 100%;
-    bottom: 0;
-}*/
 
 /*-----INDEX-NOSOTROS-----*/
 
@@ -159,10 +77,10 @@ h1 {
     align-items: center;
     margin-top: 11rem;
     margin-bottom: 11rem;
-    grid-template-columns: 50rem 45rem;
+    grid-template-columns: 65rem 45rem;
     grid-template-rows: repeat (2 50rem);
     grid-template-areas: "containerText container1"
-                         "containerText container2";
+        "containerText container2";
     margin-left: auto;
     margin-right: auto;
 }
@@ -192,7 +110,6 @@ h1 {
     padding: 2rem;
 }
 
-
 .container1 {
     display: flex;
     justify-content: center;
@@ -204,38 +121,6 @@ h1 {
     background-color: #fff !important;
     grid-area: container2;
 }
-
-@media screen and (max-width:768px) {
-    .containerSection {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 5rem;
-        margin-right: 5rem;
-        margin-top: 5rem;
-    }
-}
-
-/*.imgSlides {
-    display: none;
-    height: 100%;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}*/
 
 /*-----PRODUCTOS-----*/
 
@@ -321,7 +206,6 @@ h1 {
     border-radius: 1rem;
     box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
     transform: scale(1.1);
-
 }
 
 .product:hover>.layerDescription {
@@ -330,7 +214,7 @@ h1 {
 }
 
 .linkProduct {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .product:hover>.layerDescription>.linkProduct h3 {
@@ -358,47 +242,23 @@ h1 {
     gap: 1rem;
 }
 
-@media only screen and (max-width:768px) {
-    .containerProduct {
-        margin-top: 25rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100rem;
-        gap: 1rem;
-    }
-
-    .product {
-        margin: 1rem;
-        width: 50rem;
-        height: 20rem;
-    }
+.product {
+    width: 20rem;
+    height: 25rem;
 }
 
-@media only screen and (max-width:560px) {
-    .containerProduct {
-        gap: 5rem;
-    }
+.linkProduct>h3 {
+    margin-top: 1rem;
+}
 
-    .product {
-        width: 20rem;
-        height: 20rem;
-    }
-
-    .linkProduct>h3 {
-        margin-top: 1rem;
-    }
-
-    .product:hover>.layerDescription>.linkProduct h3 {
-        margin-top: 2.5rem;
-        margin-bottom: 2.5rem;
-    }
+.product:hover>.layerDescription>.linkProduct h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 /*-----PRODUCTOS LISTAS DE ESCANERES-----*/
 
-.containerScannerType{
+.containerScannerType {
     margin-top: 15rem;
     padding: 2rem;
     background-color: rgb(17, 45, 78);
@@ -407,35 +267,53 @@ h1 {
     min-width: 40rem;
 }
 
-.containerScanners{
+.containerScanners {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 5rem;
 }
-/*.ItemScanner{
-    display: flex;
-    flex-direction: column;
+
+
+.card:hover {
+    transform: scale(1.2);
+    border-right: solid 0.5rem rgb(43, 247, 247);
+    border-bottom: solid 0.5rem rgb(43, 247, 247);
+    border-radius: 1rem;
+    box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
+    transform: scale(1.04);
+}
+
+/*----- CARD MODAL -----*/
+
+.modal-body{
+    display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    color: black;
-    width: 20rem;
-    height: 25rem;
-    transition: 250ms ease-in;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 30rem auto;
+    grid-template-areas:"itemModal-1 itemModal-2"
+                        "itemModal-3 itemModal-3";
+    gap: 1rem;
+    height: fit-content;                     
 }
-.imgScanner{
- width: 100%;
-}*/
 
-.card:hover{
-transform: scale(1.2);
-border-right: solid 0.5rem rgb(43, 247, 247);
-border-bottom: solid 0.5rem rgb(43, 247, 247);
-border-radius: 1rem;
-box-shadow: .5rem .75rem 2rem rgb(43, 247, 247);
-transform: scale(1.04);
+.itemModal-1{
+    grid-area: itemModal-1;
 }
+
+.itemModal-2{
+    grid-area: itemModal-2;
+    height: 100%;
+    width: 100%;
+}
+
+.itemModal-3{
+    grid-area: itemModal-3;
+    height: 100%;
+    width: 100%;
+}
+
 
 /*-----SERVICIOS-----*/
 
@@ -462,37 +340,6 @@ transform: scale(1.04);
     line-height: 3.5rem;
 }
 
-@media only screen and (max-width:768px) {
-    .continerServicios {
-        height: 145vh;
-    }
-
-    .containerTextService {
-        margin-top: 10rem;
-    }
-}
-
-@media only screen and (max-width:560px) {
-    .continerServicios {
-        height: 165vh;
-    }
-
-    .containerTextService {
-        margin-top: 6.5rem;
-    }
-}
-
-@media only screen and (max-width:450px) {
-    .continerServicios {
-        height: 195vh;
-    }
-}
-
-@media only screen and (max-width:380px) {
-    .continerServicios {
-        height: 250vh;
-    }
-}
 
 /*------Contacto-----*/
 .mainForm {
@@ -597,7 +444,8 @@ input {
 }
 
 .bttnEnviar:hover,
-.bttnEnviar:focus {
+.bttnEnviar:focus,
+.bttnGD {
     background-color: greenyellow;
     color: rgba(17, 45, 78);
     border-right: solid 0.5rem rgb(43, 247, 247);
@@ -632,14 +480,118 @@ input {
     gap: 1rem;
 }
 
-@media only screen and (max-width:768px) {
+@media (max-widtH:992PX) {
+    .modal-body {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .containerSection {
+        grid-template-columns: 45rem 40rem;
+    }
+    .modal-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .itemModal-1, .itemModal-2 {
+        max-width: 30rem;
+        min-height: 30rem;
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        padding-top: 7rem;
+        margin-bottom: 30rem;
+    }
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .containerSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-top: 5rem;
+    }
+
     .sectionForm {
         margin-top: 7.5rem;
         display: flex;
         flex-direction: column;
         gap: 3.7rem;
     }
+
     .containerForm {
         margin-top: 5rem;
+    }
+
+    .continerServicios {
+        height: 145vh;
+    }
+
+    .containerTextService {
+        margin-top: 10rem;
+    }
+    .containerProduct {
+        margin-top: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100rem;
+        gap: 1rem;
+    }
+
+    .product {
+        margin: 1rem;
+        width: 45rem;
+        height: 20rem;
+    }
+    .productModal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:576px) {
+    .containerProduct {
+        gap: 5rem;
+    }
+
+    .continerServicios {
+        height: 165vh;
+    }
+
+    .containerTextService {
+        margin-top: 6.5rem;
+    }
+
+}
+
+@media (max-width:450px) {
+    .continerServicios {
+        height: 195vh;
+    }
+
+    .product {
+        margin: 1rem;
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width:380px) {
+    .continerServicios {
+        height: 250vh;
     }
 }
