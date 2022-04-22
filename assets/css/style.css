@@ -44,7 +44,7 @@ h1 {
     text-transform: uppercase;
     width: max-content; }
     .navbar .nav-item .navbar-link {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif !important;
       color: white;
       text-decoration: none !important;
       padding: .8rem 1.2rem;
@@ -89,7 +89,7 @@ h1 {
     justify-content: center;
     grid-area: container1; }
   .containerSection .container2 {
-    background-color: #fff !important;
+    background-color: white !important;
     grid-area: container2; }
 
 .paragraph {
@@ -223,7 +223,7 @@ h1 {
     flex-wrap: wrap;
     margin-top: 5rem; }
   .containerScannerType .card:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     border-right: solid 0.5rem #2bf7f7;
     border-bottom: solid 0.5rem #2bf7f7;
     border-radius: 1rem;
@@ -275,113 +275,92 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.sectionForm {
-  margin-top: 15rem;
-  margin-bottom: 2rem;
-  background-color: #112d4e;
-  font-size: 1.8rem;
-  color: white;
-  width: 80rem;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 10rem 50rem;
-  grid-template-areas: "title info" "form info"; }
-
-.titleForm {
-  height: 5rem;
-  padding: 2rem;
-  grid-area: title; }
-
-.containerForm {
-  margin-top: 3rem;
-  grid-area: form; }
-
-.containerItem label,
-input {
-  width: 100%; }
-
-.formContact {
-  display: grid;
-  padding: 2rem;
-  gap: 2rem;
-  justify-content: space-evenly;
-  align-content: center;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: repeat(6 1fr);
-  grid-template-areas: "fullname email" "phone subject" "message message" "message message" "button button"; }
-
-.itemFullName {
-  grid-area: fullname; }
-
-.itemEmail {
-  grid-area: email; }
-
-.itemPhone {
-  grid-area: phone; }
-
-.itemSubject {
-  grid-area: subject; }
-
-.itemMessage {
-  grid-area: message; }
-
-.formItem input,
-.formItem textarea {
-  width: 100%;
-  padding: 1rem;
-  background: none;
-  outline: none;
-  color: white;
-  border: none;
-  border-radius: 1rem;
-  box-shadow: 0 0.25rem greenyellow; }
-
-.bttnEnviar {
-  background-color: #1e426a;
-  grid-area: button;
-  text-transform: uppercase;
-  padding: 1rem;
-  margin-top: 1.5rem;
-  color: white;
-  letter-spacing: 0.1rem;
-  border: 0;
-  border-bottom: 1rem;
-  border-radius: 1rem;
-  transition: 0.5s;
-  cursor: pointer; }
-
-.bttnEnviar:hover,
-.bttnEnviar:focus,
-.bttnGD {
-  background-color: greenyellow;
-  color: #112d4e;
-  border-right: solid 0.5rem #2bf7f7;
-  border-bottom: solid 0.5rem #2bf7f7;
-  border-radius: 1rem;
-  letter-spacing: .2rem;
-  box-shadow: 0.5rem 0.75rem 2rem #2bf7f7;
-  transform: scale(1.04); }
-
-.containerInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 1rem;
-  gap: 2rem;
-  font-size: 1.5rem;
-  background-color: #1e426a;
-  grid-area: info; }
-
-.containerInfo ul {
-  list-style: none;
-  gap: 0.5rem; }
-
-.containerInfo ul li {
-  padding: 0.5rem; }
-
-.moreInfo {
-  gap: 1rem; }
+  .mainForm .sectionForm {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    background-color: #112d4e;
+    font-size: 1.8rem;
+    color: white;
+    width: 80rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 10rem 50rem;
+    grid-template-areas: "title info" "form info"; }
+    .mainForm .sectionForm .titleForm {
+      height: 5rem;
+      padding: 2rem;
+      grid-area: title; }
+    .mainForm .sectionForm .containerForm {
+      margin-top: 3rem;
+      grid-area: form; }
+      .mainForm .sectionForm .containerForm .formContact {
+        display: grid;
+        padding: 2rem;
+        gap: 2rem;
+        justify-content: space-evenly;
+        align-content: center;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: "fullname email" "phone subject" "message message" "message message" "button button"; }
+        .mainForm .sectionForm .containerForm .formContact .itemFullName {
+          grid-area: fullname; }
+        .mainForm .sectionForm .containerForm .formContact .itemEmail {
+          grid-area: email; }
+        .mainForm .sectionForm .containerForm .formContact .itemPhone {
+          grid-area: phone; }
+        .mainForm .sectionForm .containerForm .formContact .itemSubject {
+          grid-area: subject; }
+        .mainForm .sectionForm .containerForm .formContact .itemMessage {
+          grid-area: message; }
+        .mainForm .sectionForm .containerForm .formContact .formItem input,
+        .mainForm .sectionForm .containerForm .formContact .formItem textarea {
+          width: 100%;
+          padding: 1rem;
+          background: none;
+          outline: none;
+          color: white;
+          border: none;
+          border-radius: 1rem;
+          box-shadow: 0 0.25rem greenyellow; }
+        .mainForm .sectionForm .containerForm .formContact .bttnEnviar {
+          background-color: #1e426a;
+          grid-area: button;
+          text-transform: uppercase;
+          padding: 1rem;
+          margin-top: 1.5rem;
+          color: white;
+          letter-spacing: 0.1rem;
+          border: 0;
+          border-bottom: 1rem;
+          border-radius: 1rem;
+          transition: 0.5s;
+          cursor: pointer; }
+        .mainForm .sectionForm .containerForm .formContact .bttnEnviar:hover,
+        .mainForm .sectionForm .containerForm .formContact .bttnEnviar:focus {
+          background-color: greenyellow;
+          color: #112d4e;
+          border-right: solid 0.5rem #2bf7f7;
+          border-bottom: solid 0.5rem #2bf7f7;
+          border-radius: 1rem;
+          letter-spacing: .2rem;
+          box-shadow: 0.5rem 0.75rem 2rem #2bf7f7;
+          transform: scale(1.04); }
+    .mainForm .sectionForm .containerInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 1rem;
+      gap: 2rem;
+      font-size: 1.5rem;
+      background-color: #1e426a;
+      grid-area: info; }
+      .mainForm .sectionForm .containerInfo .containerInfo ul {
+        gap: 0.5rem; }
+      .mainForm .sectionForm .containerInfo .containerInfo ul li {
+        padding: 0.5rem; }
+      .mainForm .sectionForm .containerInfo .moreInfo {
+        list-style: none !important;
+        gap: 1rem; }
 
 @media (max-widtH: 992PX) {
   .modal-body {
@@ -394,9 +373,10 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-  .itemModal-1, .itemModal-2 {
-    max-width: 30rem;
-    min-height: 30rem; } }
+    .modal-body .itemModal-1,
+    .modal-body .itemModal-2 {
+      max-width: 30rem;
+      min-height: 30rem; } }
 
 @media (max-width: 768px) {
   body {
@@ -416,15 +396,15 @@ input {
     margin-top: 5rem; }
   .sectionForm {
     margin-top: 7.5rem;
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     gap: 3.7rem; }
-  .containerForm {
-    margin-top: 5rem; }
+    .sectionForm .containerForm {
+      margin-top: 5rem; }
   .continerServicios {
     height: 145vh; }
-  .containerTextService {
-    margin-top: 10rem; }
+    .continerServicios .containerTextService {
+      margin-top: 10rem; }
   .containerProduct {
     margin-top: 25rem;
     display: flex;
@@ -433,10 +413,10 @@ input {
     justify-content: center;
     height: 100rem;
     gap: 1rem; }
-  .product {
-    margin: 1rem;
-    width: 45rem;
-    height: 20rem; }
+    .containerProduct .product {
+      margin: 1rem;
+      width: 43rem;
+      height: 20rem; }
   .productModal {
     display: flex;
     flex-direction: column;
@@ -444,16 +424,18 @@ input {
 
 @media (max-width: 576px) {
   .containerProduct {
-    gap: 5rem; }
+    gap: 4rem; }
+    .containerProduct .product {
+      width: 40rem; }
   .continerServicios {
     height: 165vh; }
-  .containerTextService {
-    margin-top: 6.5rem; } }
+    .continerServicios .containerTextService {
+      margin-top: 6.5rem; } }
 
 @media (max-width: 450px) {
   .continerServicios {
     height: 195vh; }
-  .product {
+  .containerProduct .product {
     margin: 1rem;
     width: 20rem;
     height: 20rem; } }
