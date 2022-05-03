@@ -54,10 +54,16 @@
 /*-----FOOTER-----*/
 footer {
     background-color: $BackGroundColor-1;
-    .fa-facebook-f:hover{
-        color: map-get($map: $socialNetwork, $key:facebook )
+
+    @each $red,
+    $color in $socialNetwork {
+        .boton#{$red} {
+            color: $color;
+        }
     }
+
 }
+
 
 /*-----INDEX-NOSOTROS-----*/
 
@@ -259,7 +265,8 @@ footer {
 
     .btnCard {
         @include basicBttn;
-        &:hover{
+
+        &:hover {
             @include hoverButton;
             box-shadow: none;
             border: none;

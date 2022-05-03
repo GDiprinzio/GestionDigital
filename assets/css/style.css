@@ -72,8 +72,16 @@ body {
 /*-----FOOTER-----*/
 footer {
   background-color: #112d4e; }
-  footer .fa-facebook-f:hover {
+  footer .botonfacebook {
     color: #3b5998; }
+  footer .botontwitter {
+    color: #00acee; }
+  footer .botongoogle {
+    color: #ffffff; }
+  footer .botoninstagram {
+    color: #833AB4; }
+  footer .botonlinkedin {
+    color: #0072b1; }
 
 /*-----INDEX-NOSOTROS-----*/
 .containerBorder {
