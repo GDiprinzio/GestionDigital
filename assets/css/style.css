@@ -272,10 +272,9 @@ footer {
       box-shadow: 0.5rem 0.75rem 2rem #2bf7f7;
       background-color: greenyellow;
       color: #112d4e;
-      letter-spacing: .2rem;
-      transform: scale(1.04);
       box-shadow: none;
-      border: none; }
+      border: none;
+      transform: scale(0.95); }
 
 .btnSpecial {
   background-color: #1e426a;
@@ -298,9 +297,7 @@ footer {
     border-radius: 1rem;
     box-shadow: 0.5rem 0.75rem 2rem #2bf7f7;
     background-color: greenyellow;
-    color: #112d4e;
-    letter-spacing: .2rem;
-    transform: scale(1.04); }
+    color: #112d4e; }
 
 /*----- CARD MODAL -----*/
 .modal-body {

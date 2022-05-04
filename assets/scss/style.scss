@@ -54,15 +54,15 @@
 /*-----FOOTER-----*/
 footer {
     background-color: $BackGroundColor-1;
-
-    @each $red,
+    @each $name,
     $color in $socialNetwork {
-        .boton#{$red} {
+        .boton#{$name}{
             color: $color;
         }
     }
-
+ 
 }
+
 
 
 /*-----INDEX-NOSOTROS-----*/
@@ -270,6 +270,7 @@ footer {
             @include hoverButton;
             box-shadow: none;
             border: none;
+            transform: scale(0.95);
         }
     }
 }
