@@ -1,21 +1,6 @@
 /*------==== DEFININICION DE VARIABLES ====------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,500;1,500&display=swap");
 /*font-family: 'Montserrat', sans-serif; font-family: 'Roboto', sans-serif;*/
-.botonfacebook {
-  color: #3b5998; }
-
-.botontwitter {
-  color: #00acee; }
-
-.botongoogle {
-  color: #ffffff; }
-
-.botoninstagram {
-  color: #833AB4; }
-
-.botonlinkedin {
-  color: #0072b1; }
-
 /*------==== FIN DE DEFININICION DE VARIABLES ====------*/
 * {
   margin: 0;
@@ -72,15 +57,15 @@ body {
 /*-----FOOTER-----*/
 footer {
   background-color: #112d4e; }
-  footer .botonfacebook {
+  footer .botonfacebook:hover {
     color: #3b5998; }
-  footer .botontwitter {
+  footer .botontwitter:hover {
     color: #00acee; }
-  footer .botongoogle {
-    color: #ffffff; }
-  footer .botoninstagram {
+  footer .botongoogle:hover {
+    color: #b3b3b3; }
+  footer .botoninstagram:hover {
     color: #833AB4; }
-  footer .botonlinkedin {
+  footer .botonlinkedin:hover {
     color: #0072b1; }
 
 /*-----INDEX-NOSOTROS-----*/

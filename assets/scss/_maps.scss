@@ -1,13 +1,8 @@
 $socialNetwork: (
     facebook: #3b5998,
     twitter: #00acee,
-    google: #ffffff,
+    google: #b3b3b3,
     instagram: #833AB4,
     linkedin: #0072b1,
 );
 
-@each $red, $color in $socialNetwork {
-    .boton#{$red}{
-        color:$color;
-    }
-}
