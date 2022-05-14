@@ -12,6 +12,7 @@
     font-size: 48px;
     font-weight: bold;
     font-style: italic;
+    
 }
 
 /*-----HEADER-NAV-----*/
@@ -94,6 +95,7 @@ footer {
         color: $BackGroundColor-2;
         grid-area: containerText;
         padding: 2rem;
+
     }
 
     .container1 {
@@ -139,6 +141,7 @@ footer {
     gap: 2rem;
 }
 
+
 .product {
     margin: auto;
     position: relative;
@@ -168,14 +171,17 @@ footer {
 
 .containerDocument {
     grid-area: productA;
+    
 }
 
 .containerBluePrint {
     grid-area: productB;
+    
 }
 
 .containerBooks {
     grid-area: productC;
+    
 }
 
 .layerDescription {
@@ -325,10 +331,10 @@ footer {
     .containerTextService {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         margin-top: 15rem;
         margin-bottom: 5rem;
-        width: 100%;
+        width: 87%;
         height: max-content;
         background-color: $BackGroundColor-1;
         font-size: 1.8rem;
@@ -336,6 +342,8 @@ footer {
         gap: 2rem;
         padding: 3rem;
         line-height: 3.5rem;
+        animation: fadeIn;
+        animation-duration: 5s;
     }
 }
 
