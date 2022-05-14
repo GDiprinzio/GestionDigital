@@ -25,7 +25,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 48px;
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+  animation: fadeInDown;
+  animation-duration: 3s; }
 
 /*-----HEADER-NAV-----*/
 .navbar {
@@ -98,6 +100,9 @@ footer {
     color: white;
     grid-area: containerText;
     padding: 2rem; }
+    .containerSection .containerText .animateText {
+      animation: fadeInUp;
+      animation-duration: 3s; }
   .containerSection .container1 {
     display: flex;
     justify-content: center;
@@ -323,9 +328,10 @@ footer {
     color: white;
     gap: 2rem;
     padding: 3rem;
-    line-height: 3.5rem;
-    animation: fadeIn;
-    animation-duration: 5s; }
+    line-height: 3.5rem; }
+    .continerServicios .containerTextService .textoServicios {
+      animation: fadeInRight;
+      animation-duration: 4s; }
 
 /*------Contacto-----*/
 .mainForm {
@@ -411,7 +417,9 @@ footer {
       gap: 2rem;
       font-size: 1.5rem;
       background-color: #1e426a;
-      grid-area: info; }
+      grid-area: info;
+      animation: fadeInRight;
+      animation-duration: 3s; }
       .mainForm .sectionForm .containerInfo .containerInfo ul {
         gap: 0.5rem; }
       .mainForm .sectionForm .containerInfo .containerInfo ul li {
